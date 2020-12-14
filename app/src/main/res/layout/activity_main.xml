@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:src="@mipmap/ic_launcher"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageApp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"/>
+    <TextView
+        android:text="QR Code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:layout_below="@+id/imageApp"
+        android:id="@+id/tvQRCode"/>
+    <TextView
+        android:text="Dia Chi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:layout_below="@+id/tvQRCode"
+        android:id="@+id/tvDiaChi"/>
+    <Button
+        android:layout_below="@+id/tvDiaChi"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btnClick"
+        android:text="QR Scan"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>
